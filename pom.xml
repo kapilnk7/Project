@@ -17,6 +17,20 @@
     <dependencies>
         <!-- Your dependencies go here -->
     </dependencies>
+    <dependencies>
+        <!-- Intentionally vulnerable library -->
+        <dependency>
+            <groupId>org.apache.struts</groupId>
+            <artifactId>struts2-core</artifactId>
+            <version>2.3.20</version>
+        </dependency>
+        
+        <!-- Deprecated library with bugs -->
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.6</version>
+        </dependency>
     
     <build>
         <plugins>
@@ -43,8 +57,3 @@
     </build>
 </project>
 
-<dependency>
-            <groupId>commons-lang</groupId>
-            <artifactId>commons-lang</artifactId>
-            <version>2.6</version>
-        </dependency>
